@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-color: #f2f2f2;
+    background-color: white;
     font-family: Arial, sans-serif;
     color: #111;
 }
@@ -196,6 +196,8 @@ main {
 
 .awards {
     padding-bottom: 80px;
+    border-bottom: 1px solid #ddd;
+
 }
 
 .awards__group {
@@ -216,6 +218,8 @@ main {
     grid-template-columns: 1fr 2fr 50px;
     gap: 30px;
     font-size: 14px;
+    grid-column: 2 / 3;
+
 }
 
 .awards__item p {
@@ -240,4 +244,146 @@ main {
     align-items: center;
     gap: 24px;
     font-size: 14px;
+}
+
+.project {
+    padding: 60px 0 80px;
+}
+
+.project__intro {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 50px;
+}
+
+.project__description {
+    max-width: 600px;
+}
+
+.project__description h1 {
+    margin: 0 0 24px;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.project__description p {
+    margin: 0 0 20px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.project__details {
+    width: 320px;
+}
+
+.project__details div {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
+}
+
+.project__details span {
+    color: #777;
+}
+
+.project__details strong {
+    font-weight: normal;
+}
+
+.project__hero img {
+    display: block;
+    width: 100%;
+}
+
+.project__text {
+    margin: 30px 0 60px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.project__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project__gallery div {
+    overflow: hidden;
+}
+
+.project__gallery img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.contact {
+    padding: 60px 0 80px;
+}
+
+.contact__intro {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 70px;
+}
+
+.contact__intro > div {
+    max-width: 450px;
+}
+
+.contact__intro h1 {
+    margin: 0 0 24px;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.contact__intro p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+}
+
+.contact__form label {
+    margin-bottom: 8px;
+    color: #777;
+    font-size: 13px;
+}
+
+.contact__form input {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    font-family: inherit;
+}
+
+.contact__form button {
+    width: 70px;
+    margin-top: 10px;
+    padding: 8px 0;
+    border: none;
+    background-color: #4b4cff;
+    color: white;
+    cursor: pointer;
+}
+
+.contact__map img {
+    display: block;
+    width: 100%;
 }
